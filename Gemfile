@@ -1,14 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.2'
+gem 'devise'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
   gem 'sqlite3'
+  gem "rspec-rails", "~> 2.0"
 end
-
 
 # Gems used only for assets and not required
 # in production environments by default.

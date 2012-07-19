@@ -5,7 +5,8 @@ describe "articles/show" do
     @article = assign(:article, stub_model(Article,
       :name => "Name",
       :title => "Title",
-      :content => "MyText"
+      :content => "MyText",
+      :user => nil
     ))
   end
 
@@ -17,5 +18,7 @@ describe "articles/show" do
     rendered.should match(/Title/)
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/MyText/)
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    rendered.should match(//)
   end
 end

@@ -6,7 +6,7 @@ Habrablog::Application.routes.draw do
 
   resources :articles
 
-  root :to => "home#index"
+  root :to => "articles#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
